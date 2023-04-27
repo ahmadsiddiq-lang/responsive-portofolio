@@ -26,7 +26,7 @@
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
                   <li class="nav__item">
-                     <a href="#home" class="nav__link">Home</a>
+                     <a href="#home" class="nav__link active-link">Home</a>
                   </li>
                   <li class="nav__item">
                      <a href="#about" class="nav__link">About</a>
@@ -191,7 +191,7 @@
          <!--==================== SKILLS ====================-->
          <section class="skills section">
             <div class="skills__container container grid">
-               <div class="section__data">
+               <div class="skills__data">
                   <h3 class="section__subtitle">
                      Favorite <span>Skills</span>
                   </h3>
@@ -375,13 +375,12 @@
                   <div class="contact__group">
                      <input type="text" name="user_name" required placeholder="Enter youre name" class="contact__input">
                      <input type="email" name="user_email" required placeholder="Enter youre email" class="contact__input">
-                     <textarea name="user_project" required placeholder="Enter youre message" id="" class="contact__input"></textarea>
-                     <p class="contact__message" id="contact-message"></p>
-
-                     <button type="submit" class="button contact__button">
-                        Send Message
-                     </button>
                   </div>
+                  <textarea name="user_project" required placeholder="Enter youre message" id="" class="contact__input"></textarea>
+                  <p class="contact__message" id="contact-message"></p>
+                  <button type="submit" class="button contact__button">
+                     Send Message
+                  </button>
                </form>
             </div>
          </section>
@@ -419,10 +418,12 @@
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      
+      <a href="#home" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
 
       <!--=============== SCROLLREVEAL ===============-->
-      <script src=""></script>
+      <script src="assets/js/scrollreveal.min.js"></script>
 
       <!--=============== EMAIL JS ===============-->
       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
